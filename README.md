@@ -95,6 +95,14 @@ python3 generate_data.py
 duckdb fakedata_duckdb.db 
 ```
 
+4. **Clean up files**
+
+You can run this script to clean up .csv and .db files
+
+```sh
+python3 clean_files.py
+```
+
 ### 📁 Output Format
 The script generates the following output files:
 
