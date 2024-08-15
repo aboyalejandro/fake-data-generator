@@ -1,4 +1,4 @@
-# 📊🤖 Fake Data Generation for your demo projects
+# 📊🤖 Fake Data Generator for your demo projects
 
 ## 🚀 Introduction
 
