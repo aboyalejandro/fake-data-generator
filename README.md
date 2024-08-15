@@ -63,7 +63,7 @@ LIMIT 5;
 
 4. **Clean the container**
 
-   This command will remove the container, the image and any files that were copied:
+This command will remove the container, the image and any files that were copied:
 
 ```sh 
 make clean
@@ -98,12 +98,8 @@ The script generates the following output files:
 
 These CSV files are then imported into a DuckDB database named fakedata_duckdb.db, with tables corresponding to each CSV file.
 
-### Notes
-- Ensure that you have appropriate permissions to run Docker commands or access the local directories.
-- Adjust the number of records and other parameters in the generate_data.py script as needed for your use case.
+### [Follow me on Linkedin](https://www.linkedin.com/in/alejandro-aboy/)
+- Get tips, learnings and tricks for your Data career!
 
-### Follow me on Linkedin
-- Get tips, learnings and tricks for your Data career! [Connect with me](https://www.linkedin.com/in/alejandro-aboy/)
-
-## Subscribe to The Pipe & The Line
-- Join the Substack newsletter to get similar content to this one and more to improve your Data career! [Subscribe here](https://thepipeandtheline.substack.com/?utm_source=github&utm_medium=referral)
+## [Subscribe to The Pipe & The Line](https://thepipeandtheline.substack.com/?utm_source=github&utm_medium=referral)
+- Join the Substack newsletter to get similar content to this one and more to improve your Data career!
