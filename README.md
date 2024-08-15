@@ -45,7 +45,7 @@ make csvs
 3. **Access the DuckDB Database**
     After running the container, you are inside the DuckDB database from within the container or copy the database file to your local machine for further analysis.
 
-    You can run any queries you like. To exit the DuckDB shell, use Ctrl+C or Ctrl+D:
+    You can run any queries you like:
 
 ```sh
 SELECT * FROM user_profiles LIMIT 5;
@@ -60,6 +60,8 @@ FROM products
 LEFT JOIN transactions ON products.product_id = transactions.product_id
 LIMIT 5;
 ```
+
+To exit the DuckDB shell, use Ctrl+C or Ctrl+D.
 
 4. **Clean the container**
 
@@ -101,5 +103,5 @@ These CSV files are then imported into a DuckDB database named fakedata_duckdb.d
 ### [Follow me on Linkedin](https://www.linkedin.com/in/alejandro-aboy/)
 - Get tips, learnings and tricks for your Data career!
 
-## [Subscribe to The Pipe & The Line](https://thepipeandtheline.substack.com/?utm_source=github&utm_medium=referral)
+### [Subscribe to The Pipe & The Line](https://thepipeandtheline.substack.com/?utm_source=github&utm_medium=referral)
 - Join the Substack newsletter to get similar content to this one and more to improve your Data career!
