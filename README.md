@@ -61,9 +61,7 @@ LEFT JOIN transactions ON products.product_id = transactions.product_id
 LIMIT 5;
 ```
 
-To exit the DuckDB shell, use Ctrl+C or Ctrl+D.
-
-You can always open DuckDB again by running
+To exit the DuckDB shell, use Ctrl+C or Ctrl+D. You can always open DuckDB again by running:
 
 ```sh 
 make duckdb
