@@ -63,6 +63,12 @@ LIMIT 5;
 
 To exit the DuckDB shell, use Ctrl+C or Ctrl+D.
 
+You can always open DuckDB again by running
+
+```sh 
+make duckdb
+``` 
+
 4. **Clean the container**
 
 This command will remove the container, the image and any files that were copied:
@@ -91,7 +97,7 @@ python3 generate_data.py
 duckdb fakedata_duckdb.db 
 ```
 
-### Output Format
+### 📁 Output Format
 The script generates the following output files:
 
 - user_profiles.csv: Contains user profile data.
