@@ -45,7 +45,7 @@ make csvs
 3. **Access the DuckDB Database**
     After running the container, you are inside the DuckDB database from within the container or copy the database file to your local machine for further analysis.
 
-    You can run any queries you like. For example:
+    You can run any queries you like. To exit the DuckDB shell, use Ctrl+C or Ctrl+D:
 
 ```sh
 SELECT * FROM user_profiles LIMIT 5;
@@ -60,8 +60,6 @@ FROM products
 LEFT JOIN transactions ON products.product_id = transactions.product_id
 LIMIT 5;
 ```
-
-    To exit the DuckDB shell, use Ctrl+C or Ctrl+D.
 
 4. **Clean the container**
 
