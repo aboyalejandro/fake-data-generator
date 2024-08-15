@@ -10,6 +10,10 @@ run:
 	docker cp fake-data-container:app/fakedata_duckdb.db ./fakedata_duckdb.db 
 	duckdb fakedata_duckdb.db
 
+# Connect back to duckdb 
+duckdb:
+	duckdb fakedata_duckdb.db
+
 # Make csvs ouputs available for futher local processing
 csvs:
 	docker cp fake-data-container:app/products.csv ./products.csv 
