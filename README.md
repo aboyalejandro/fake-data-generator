@@ -23,20 +23,21 @@ You can also run any other pandas, polars or Spark processing with the available
 
    First, you need to build the Docker image that contains all the necessary dependencies. Run the following command in your terminal:
 
-```sh
-   make build
-   ```
+```sh 
+make build
+```
 
 2. **Run the Docker Container**
     Once the image is built, you can run the container with:
 
-```sh
-   make run
+```sh 
+make run
 ```
+  
   Optional: you can run this command to have the csvs available in your local if using Docker.
 
-```sh
-   make csvs
+```sh 
+make csvs
 ``` 
 
    This will generate the fake data and output csv and the duckdb database to have available in your machine.
@@ -47,17 +48,17 @@ You can also run any other pandas, polars or Spark processing with the available
     You can run any queries you like. For example:
 
 ```sh
-    SELECT * FROM user_profiles LIMIT 5;
+SELECT * FROM user_profiles LIMIT 5;
 
-    SELECT DISTINCT product_name, category
-    FROM products
-    LEFT JOIN transactions ON products.product_id = transactions.product_id
-    LIMIT 5;
+SELECT DISTINCT product_name, category
+FROM products
+LEFT JOIN transactions ON products.product_id = transactions.product_id
+LIMIT 5;
 
-    SELECT DISTINCT product_name, category, user_id, transaction_type, amount
-    FROM products
-    LEFT JOIN transactions ON products.product_id = transactions.product_id
-    LIMIT 5;
+SELECT DISTINCT product_name, category, user_id, transaction_type, amount
+FROM products
+LEFT JOIN transactions ON products.product_id = transactions.product_id
+LIMIT 5;
 ```
 
     To exit the DuckDB shell, use Ctrl+C or Ctrl+D.
@@ -66,22 +67,26 @@ You can also run any other pandas, polars or Spark processing with the available
 
    This command will remove the container, the image and any files that were copied:
 
-```sh
-   make clean
-   ```
+```sh 
+make clean
+```
 
 ### Running Locally
 
 1. **Install requirements.txt**
-```sh
-   pip install requirements.tzt
+
+```sh 
+pip install requirements.tzt 
 ```
+
 2. **Generate Data**
-```sh
-    NUM_RECORDS=1000  # Adjust the number as needed
-    python3 generate_data.py
+
+```sh 
+NUM_RECORDS=1000  # Adjust the number as needed
+python3 generate_data.py
 ```
 3. **Access DuckDB Database**
+
 ```sh
 duckdb fakedata_duckdb.db 
 ```
