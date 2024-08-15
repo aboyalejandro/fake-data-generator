@@ -78,14 +78,13 @@ You can also run any other pandas, polars or Spark processing with the available
 ```
 2. **Generate Data**
 ```sh
-   export NUM_RECORDS=1000  # Adjust the number as needed
+    NUM_RECORDS=1000  # Adjust the number as needed
     python3 generate_data.py
 ```
 3. **Access DuckDB Database**
 ```sh
 duckdb fakedata_duckdb.db 
 ```
-You can run the following queries to explore the data:
 
 ### Output Format
 The script generates the following output files:
@@ -100,8 +99,8 @@ These CSV files are then imported into a DuckDB database named fakedata_duckdb.d
 - Ensure that you have appropriate permissions to run Docker commands or access the local directories.
 - Adjust the number of records and other parameters in the generate_data.py script as needed for your use case.
 
-## Follow me on Linkedin
-- Get tips, learnings and tricks for your Data career!
+### Follow me on Linkedin
+- Get tips, learnings and tricks for your Data career! [Connect with me](https://www.linkedin.com/in/alejandro-aboy/)
 
 ## Subscribe to The Pipe & The Line
-- Join the Substack newsletter to get similar content to this one and more to improve your Data career! 
+- Join the Substack newsletter to get similar content to this one and more to improve your Data career! [Subscribe here](https://thepipeandtheline.substack.com/?utm_source=github&utm_medium=referral)
