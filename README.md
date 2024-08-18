@@ -103,6 +103,11 @@ You can run this script to clean up .csv and .db files
 python3 clean_files.py
 ```
 
+### 🔃 Data Modeling
+Here's a graphic representation on how the datasets are related to each other.
+
+![Data Modeling](schema.png)
+
 ### 📁 Output Format
 The script generates the following output files:
 
